@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      CRUD
+    </title>
+    <!-- bootstrap css  -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!--page_icon-->
+    <link rel="icon" href="./img/Unofficial_JavaScript_logo_2.svg.png">
+    <!-- css file -->
+    <link rel="stylesheet" href="./css/style.css" />
+    
+    <link href="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.min.css
+    " rel="stylesheet">
+  </head>
+  <body>
+
+    
+<div class="container shadow-lg p-2 w-75 mt-1">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="text-center text-uppercase">cruds system</h1>
+    </div>
+    <div class="col-md-9 m-auto">
+      <div>
+        <label for="productNameInput"> Product Name :</label>
+        <input type="text" id="productNameInput" class="form-control  ">
+        <div class="alert alert-danger mt-1" role="alert" id="alertName">
+          <strong>Enter Valid Name</strong>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9 m-auto py-1">
+      <div>
+        <label for="productPriceInput"> Product Price :</label>
+        <input type="text" id="productPriceInput" class="form-control ">
+        <div class="alert alert-danger mt-1" role="alert" id="alertPrice">
+          <strong>Enter Valid Price</strong>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9 m-auto py-1">
+      <div>
+        <label for="productCategoryInput"> Product Category :</label>
+        <input type="text" id="productCategoryInput" class="form-control ">
+        <div class="alert alert-danger mt-1" role="alert" id="alertCate">
+          <strong>Enter Valid Category</strong>
+        </div>
+      </div>
+      
+    </div>
+    <div class="col-md-9 m-auto">
+      <div>
+        <label for="productDescInput"> Product Desc :</label>
+        <textarea id="productDescInput" class="form-control " ></textarea>
+        <div class="alert alert-danger mt-1" role="alert" id="alertDesc">
+          <strong>Enter Valid Desc.</strong>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9 m-auto py-1">
+      <div class="">
+        <button id="addButton" class="btn btn-success "> 
+          Add Product
+        </button>   
+        <button class="btn btn-danger  " id="clearData"> 
+          clear
+        </button>  
+      </div>     
+    </div>
+    <div class="col-md-9 m-auto py-1">
+      <div class="">
+        <button class="btn btn-dark " onclick="delAll()"> 
+          Delete All
+        </button>     
+      </div>     
+    </div>
+    <div class="col-md-9 m-auto py-1">
+      <input type="text" oninput="search()" placeholder="search" class="form-control w-75 m-auto" id="searchInput">
+    </div>
+  </div>
+</div>
+
+    <!-- Products Details  -->
+
+  <div class="container">
+    <table class="table m-auto text-center shadow table-striped mt-5">
+      <thead class="bg-warning text-white" >
+        <th> index </th>
+        <th> Product Name </th>
+        <th> Product Price </th>
+        <th> Product Category </th>
+        <th> Product Desc </th>
+        <th> Update </th>
+        <th> Delete </th>
+      </thead>
+      <tbody id="Details">
+      
+      </tbody>
+    </table>
+  </div>
+
+    <!-- jQuery -->
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    <!-- SweetAlert.js -->
+    <script src="
+        https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js
+        "></script>
+    <!-- boostrap JS  -->
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- JS file -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

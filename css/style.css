@@ -1,0 +1,22 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+/* mark{
+    background-color: yellowgreen;
+} */
+
+.alert{
+    display: none;
+}
+
+#Details{
+    max-height: 10px !important;
+    overflow-y: hidden;
+}
